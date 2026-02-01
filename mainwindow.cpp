@@ -38,6 +38,9 @@ MainWindow::MainWindow(QWidget *parent)
     layout->addWidget(chartView);
     ui->chartWidget->setLayout(layout);
 
+
+    this->setWindowFlags(Qt::FramelessWindowHint);
+    this->showFullScreen();
 }
 
 MainWindow::~MainWindow()
